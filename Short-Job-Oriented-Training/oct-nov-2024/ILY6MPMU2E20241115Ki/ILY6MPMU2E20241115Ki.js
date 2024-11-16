@@ -8,7 +8,7 @@ document.getElementById("programName").textContent = "Short-Job-Oriented-Trainin
 document.getElementById("completionDate").textContent = "Completed on November 15, 2024";
 
 // set the certificationId
-document.getElementById("certificationId").textContent = "Certification ID : ELNJ9O1JSU20241115Ki";
+document.getElementById("certificationId").textContent = "Certification ID : ILY6MPMU2E20241115Ki";
 // Set the achievement text
 document.getElementById("achievementText").textContent = "Kishore Y A has successfully completed the training with solid results, reflecting consistent effort and a strong commitment to learning."
 // Set the partner name text

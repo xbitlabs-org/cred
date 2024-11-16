@@ -1,5 +1,5 @@
 // Set the recipient's name
-document.getElementById("recipientName").textContent = "Mahadeva Prasad M";
+document.getElementById("recipientName").textContent = "Kanishgar B";
 
 // Set the program name
 document.getElementById("programName").textContent = "Short-Job-Oriented-Training";
@@ -8,13 +8,13 @@ document.getElementById("programName").textContent = "Short-Job-Oriented-Trainin
 document.getElementById("completionDate").textContent = "Completed on November 15, 2024";
 
 // set the certificationId
-document.getElementById("certificationId").textContent = "Certification ID : 1MHR7LWV3N20241115Ma";
+document.getElementById("certificationId").textContent = "Certification ID : UJ5WVFNB6S20241115Ka";
 // Set the achievement text
-document.getElementById("achievementText").textContent = "Mahadeva Prasad M has completed the training with excellent results, demonstrating a high level of dedication and effort throughout."
+document.getElementById("achievementText").textContent = "Kanishgar B has completed the training with strong results, showcasing good effort and a positive attitude throughout the course."
 // Set the partner name text
 document.getElementById("partnerName").textContent = "Cavalier IST"
 
-document.getElementById("overallScore").textContent = "Achieved an overall score : 439/500 and 87.8%";
+document.getElementById("overallScore").textContent = "Achieved an overall score : 397/500 and 79.4%";
 
 document.getElementById("signatoryName").textContent = "https://www.xbitlabs.in";
 
