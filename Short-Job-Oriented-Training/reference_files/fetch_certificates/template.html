@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../reference_files/fetch_certificates/template.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Graduates of Training Program</title>
+    <script>
+        function redirectToCertificate() {
+            var certificateId = document.getElementById("certificateId").value;
+            if (certificateId) {
+                var url = "{sample_certificate_url}/" + certificateId + '/' + certificateId + ".html";
+                window.location.href = url;
+            }
+            else {
+                alert("Please enter a valid Certificate ID.");
+            }
+        }
+        function redirectToResume() {
+            var candidateId = document.getElementById("candidateId").value;
+            if (candidateId) {
+                var url = "{sample_certificate_url}/" + 'resume_profile/' + candidateId + '/' + candidateId + ".pdf";
+                window.location.href = url;
+            }
+            else {
+                alert("Please enter a valid candidate ID.");
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+    <!-- Header with Logo on the Left and Title/Tagline Directly Next to It -->
+    <header>
+        <div class="header-content">
+            <img src="../reference_files/logo.png" alt="XBit Labs IN Logo" class="logo">
+            <div class="header-text">
+                <h1>XBit Labs IN</h1>
+                <p>Master Tomorrow's Skills with Hands-On Learning</p>
+                <p><a href="https://www.xbitlabs.in">www.xbitlabs.in</a></p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Graduates of the Training Program</h1>
+        <p><b>Batch Details : </b> {batch_name}</p>
+        <p><b>Training type : </b> {training_name}</p>
+
+        <div>
+            <label for="certificateId"><b>Enter Certificate ID:</b></label>
+            <input type="text" id="certificateId" placeholder="Enter your Certificate ID">
+            <button onclick="redirectToCertificate()">View Certificate</button>
+
+            <input type="text" id="candidateId" placeholder="Enter your Candidate ID">
+            <button onclick="redirectToResume()">View Resume</button>
+
+        </div>
+
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Achievement</th>
+                <th>Score</th>
+                <th>Certificate ID</th>
+            </tr>
+            <!-- Placeholder for dynamic rows -->
+            {table_rows}
+        </table>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Bengaluru, Karnataka, India | 9625188625 | <a href="mailto:inquiries.xbitlabs@gmail.com">inquiries.xbitlabs@gmail.com</a></p>
+        <p>Copyright © 2023-2024 XBit Labs IN | <a href="https://www.xbitlabs.in">www.xbitlabs.in</a> | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
