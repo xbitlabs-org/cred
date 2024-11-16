@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../reference_files/fetch_certificates/template.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Graduates of Training Program</title>
+    <script>
+        function redirectToCertificate() {
+            var certificateId = document.getElementById("certificateId").value;
+            if (certificateId) {
+                var url = "https://cred.xbitlabs.org/Short-Job-Oriented-Training/oct-nov-2024/" + certificateId + '/' + certificateId + ".html";
+                window.location.href = url;
+            }
+            else {
+                alert("Please enter a valid Certificate ID.");
+            }
+        }
+        function redirectToResume() {
+            var candidateId = document.getElementById("candidateId").value;
+            if (candidateId) {
+                var url = "https://cred.xbitlabs.org/Short-Job-Oriented-Training/oct-nov-2024/" + 'resume_profile/' + candidateId + '/' + candidateId + ".pdf";
+                window.location.href = url;
+            }
+            else {
+                alert("Please enter a valid candidate ID.");
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+    <!-- Header with Logo on the Left and Title/Tagline Directly Next to It -->
+    <header>
+        <div class="header-content">
+            <img src="../reference_files/logo.png" alt="XBit Labs IN Logo" class="logo">
+            <div class="header-text">
+                <h1>XBit Labs IN</h1>
+                <p>Master Tomorrow's Skills with Hands-On Learning</p>
+                <p><a href="https://www.xbitlabs.in">www.xbitlabs.in</a></p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Graduates of the Training Program</h1>
+        <p><b>Batch Details : </b> oct-nov-2024</p>
+        <p><b>Training type : </b> Short-Job-Oriented-Training</p>
+
+        <div>
+            <label for="certificateId"><b>Enter Certificate ID:</b></label>
+            <input type="text" id="certificateId" placeholder="Enter your Certificate ID">
+            <button onclick="redirectToCertificate()">View Certificate</button>
+
+            <input type="text" id="candidateId" placeholder="Enter your Candidate ID">
+            <button onclick="redirectToResume()">View Resume</button>
+
+        </div>
+
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Achievement</th>
+                <th>Score</th>
+                <th>Certificate ID</th>
+            </tr>
+            <!-- Placeholder for dynamic rows -->
+            
+        <tr>
+            <td>Amritpal Singh</td>
+            <td>Amritpal Singh has successfully completed the training, demonstrating consistent effort and a strong performance throughout.</td>
+            <td>Achieved an overall score : 377/500 and 75.4%</td>
+            <td>LTPQHS7K5Z20241115Am</td>
+        </tr>
+        
+        <tr>
+            <td>Anandh S</td>
+            <td>Anandh S has completed the training with good results, showing steady progress and commitment during the course.</td>
+            <td>Achieved an overall score : 364/500 and 72.8%</td>
+            <td>QX6N8O5TEO20241115An</td>
+        </tr>
+        
+        <tr>
+            <td>Basamma Mounesh Meti</td>
+            <td>Basamma Mounesh Meti has excelled in the training, completing it with outstanding performance and dedication.</td>
+            <td>Achieved an overall score : 455/500 and 91%</td>
+            <td>OJYMQ15GSK20241115Ba</td>
+        </tr>
+        
+        <tr>
+            <td>Kanishgar B</td>
+            <td>Kanishgar B has completed the training with strong results, showcasing good effort and a positive attitude throughout the course.</td>
+            <td>Achieved an overall score : 397/500 and 79.4%</td>
+            <td>L2HUE0VL4A20241115Ka</td>
+        </tr>
+        
+        <tr>
+            <td>Kishore Y A</td>
+            <td>Kishore Y A has successfully completed the training with solid results, reflecting consistent effort and a strong commitment to learning.</td>
+            <td>Achieved an overall score : 372/500 and 74.4%</td>
+            <td>ELNJ9O1JSU20241115Ki</td>
+        </tr>
+        
+        <tr>
+            <td>Mahadeva Prasad M</td>
+            <td>Mahadeva Prasad M has completed the training with excellent results, demonstrating a high level of dedication and effort throughout.</td>
+            <td>Achieved an overall score : 439/500 and 87.8%</td>
+            <td>1MHR7LWV3N20241115Ma</td>
+        </tr>
+        
+        </table>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Bengaluru, Karnataka, India | 9625188625 | <a href="mailto:inquiries.xbitlabs@gmail.com">inquiries.xbitlabs@gmail.com</a></p>
+        <p>Copyright © 2023-2024 XBit Labs IN | <a href="https://www.xbitlabs.in">www.xbitlabs.in</a> | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
